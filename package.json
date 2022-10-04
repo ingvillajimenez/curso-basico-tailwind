@@ -1,0 +1,17 @@
+{
+  "name": "platzi-travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
+  },
+  "author": "Juan Villa <ing.villa.jimenez@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8"
+  }
+}

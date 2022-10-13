@@ -19,23 +19,30 @@
       <div id="home">
         <div class="w-full h-3/4">
           <div
-            class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center"
+            class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-20 lg:justify-start"
           >
             <input
-              class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12"
+              class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
               placeholder="San Francisco"
               type="search"
               name=""
               id=""
             />
+            <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+              <p class="text-4xl ml-16 font-bold text-black">
+                Find more locations like this
+              </p>
+            </div>
             <button
-              class="w-48 rounded-full text-lg text-primary shadow-sm font-semibold p-4 bg-white transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-trasnlate-y-1 hover:scale-110"
+              class="w-48 rounded-full text-lg text-primary shadow-sm font-semibold p-4 bg-white transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-trasnlate-y-1 hover:scale-110 lg:ml-16"
             >
-              Explore more
+              Explore
             </button>
           </div>
-          <div class="w-full h-full">
-            <img src="./img/sanFrancisco.jpg" alt="" />
+          <div
+            class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
+          >
+            <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -69,7 +76,9 @@
             <div class="w-full h-3/5 bg-seattle bg-cover rounded-t-lg"></div>
             <div class="w-full h-2/5 bg-white rounded-b-lg">
               <p class="text-terciary font-bold text-xl px-4 py-2">Seattle</p>
-              <p class="text-terciary text-base px-4">Big City</p>
+              <p class="text-terciary text-base px-4">
+                A great city to enjoy to the fullest
+              </p>
             </div>
           </div>
           <div class="Card">
@@ -78,7 +87,38 @@
             ></div>
             <div class="w-full h-2/5 bg-secondary rounded-b-lg">
               <p class="text-white font-bold text-xl px-4 py-2">Switzerland</p>
-              <p class="text-white text-base px-4">Big City</p>
+              <p class="text-white text-base px-4">The best hot chocolate</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div
+              class="w-full h-3/5 bg-sydney bg-cover bg-center rounded-t-lg"
+            ></div>
+            <div class="w-full h-2/5 bg-white rounded-b-lg">
+              <p class="text-terciary font-bold text-xl px-4 py-2">Sydney</p>
+              <p class="text-terciary text-base px-4">
+                Discover the famous opera
+              </p>
+            </div>
+          </div>
+          <div class="Card">
+            <div
+              class="w-full h-3/5 bg-europe bg-cover bg-center rounded-t-lg"
+            ></div>
+            <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+              <p class="text-white font-bold text-xl px-4 py-2">Edinburgh</p>
+              <p class="text-white text-base px-4">Tour the medieval castles</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div
+              class="w-full h-3/5 bg-iceland bg-cover bg-center rounded-t-lg"
+            ></div>
+            <div class="w-full h-2/5 bg-white rounded-b-lg">
+              <p class="text-terciary font-bold text-xl px-4 py-2">Iceland</p>
+              <p class="text-terciary text-base px-4">
+                Rugged landscapes and scenery
+              </p>
             </div>
           </div>
         </div>
@@ -160,7 +200,7 @@
       <p class="text-sm text-gray-300">Follow Us</p>
     </footer>
     <div
-      class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center"
+      class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center lg:hidden"
       id="tab_bar"
     >
       <a href="#home">

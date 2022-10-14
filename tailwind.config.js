@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // purge: [],
   darkMode: "class", // or 'media' or 'class'
-  content: ["./public/index.html", "./src/**/*.{html,js}"],
+  content: ["./public/**/*.html", "./src/**/*.{html,js}"],
   theme: {
     extend: {
       backgroundImage: {
